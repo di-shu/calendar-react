@@ -1,13 +1,114 @@
-body {
+@import url("./assets/styles/fonts.css");
+@import url("./assets/styles/tooltip-overrides.css");
+:root {
+  --vt-c-white: #f0f0f7;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input,
+input:focus {
+  outline: none;
+  border: none;
+}
+
+input {
+  border-bottom: 1px solid #43425d80;
+  padding-bottom: 8px;
+  width: 100%;
+}
+
+input:focus {
+  border-bottom: 1px solid #3b86ff;
+}
+
+.event-modal-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.discard-button {
+  color: #ff5f1f;
+}
+.delete-button {
+  color: #ff5f5f;
+}
+.edit-button {
+  color: #6a6996;
+}
+.edit-button,
+.delete-button,
+.discard-button {
+  font-size: 12px;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.datepicker {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.datepicker-label {
+  margin-right: 5px;
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+.App {
+  padding: 0 40px;
 }

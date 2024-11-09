@@ -1,0 +1,136 @@
+#full-calendar-wrapper {
+  .fc {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 6px #0000000a;
+  }
+  .fc .fc-daygrid-day.fc-day-today,
+  .fc-timegrid-cols .fc-day-today,
+  .fc thead {
+    background-color: #f5f6fa;
+  }
+  .fc td,
+  .fc .fc-scrollgrid {
+    border: 1px solid #eaf0f4;
+  }
+  .fc th {
+    border: none;
+  }
+  .fc th .fc-scrollgrid-sync-inner {
+    padding: 14px 0;
+  }
+  .fc-h-event,
+  .fc-event {
+    background-color: #3b86ff;
+    padding: 3px 14px;
+    border-radius: 4px;
+    color: #fff;
+    border: 1px solid #3b86ff;
+    /* overflow: hidden; */
+  }
+  .fc-daygrid-day-top {
+    padding-top: 13px;
+    padding-right: 11px;
+  }
+  .fc-daygrid-day-top a {
+    padding: 0;
+  }
+  .fc-col-header-cell-cushion {
+    color: #a3a6b4;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro Bold";
+  }
+  .fc-timeGridDay-view tbody tr:nth-child(2),
+  .fc-timeGridWeek-view tbody tr:nth-child(2) {
+    display: none;
+  }
+  .fc-timegrid-slots tbody tr:nth-child(2) {
+    display: table-row;
+  }
+  .fc-scrollgrid-section-liquid td {
+    border-top: none;
+  }
+  .fc-direction-ltr .fc-timegrid-now-indicator-arrow {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border-bottom-color: unset;
+    border-top-color: unset;
+    border-width: unset;
+    margin-top: -4px;
+    left: 61px;
+    background-color: #3b86ff;
+    border: none;
+  }
+  .fc .fc-timegrid-now-indicator-line {
+    border-color: #3b86ff;
+  }
+  .fc-button {
+    background: #ffffff;
+    border: 1px solid #d7dae2;
+    color: #4d4f5c;
+    outline: none;
+  }
+  .fc-button:hover {
+    color: #fff;
+  }
+  .fc .fc-button-primary:not(:disabled).fc-button-active:focus,
+  .fc .fc-button-primary:not(:disabled):active:focus,
+  .fc .fc-button-primary:focus {
+    box-shadow: none;
+  }
+  .fc .fc-button-primary:not(:disabled).fc-button-active:active {
+    background-color: #fff;
+  }
+  .fc .fc-button-primary:not(:disabled):active,
+  .fc-button:hover {
+    background: #3b86ff;
+    border-color: #3b86ff;
+  }
+  .fc-button:disabled,
+  .fc-button-primary:not(:disabled).fc-button-active {
+    background-color: #fff;
+    border: 1px solid #d7dae2;
+    color: #3b86ff;
+    opacity: 1;
+  }
+  .fc-today-button {
+    border-radius: 4px 0px 0px 4px;
+  }
+  .fc-event:has(.editing-active) {
+    background-color: #fff !important;
+    box-shadow: inset 0px 3px 5px #00000020;
+    color: #3b86ff;
+  }
+  .fc-event:has(.editing-active) .fc-event-main {
+    color: #3b86ff;
+  }
+  .fc .fc-timegrid-now-indicator-container {
+    overflow: visible;
+  }
+  .fc-header-toolbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 15px;
+  }
+  .fc-header-toolbar .fc-toolbar-chunk:first-child {
+    grid-row: 2;
+  }
+  .fc-header-toolbar .fc-toolbar-chunk:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .fc-header-toolbar .fc-toolbar-chunk:nth-child(3) {
+    grid-column: 3;
+    display: flex;
+    justify-content: end;
+  }
+  .fc-header-toolbar .fc-toolbar-chunk:last-child {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 1.75em;
+  }
+}

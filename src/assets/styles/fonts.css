@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro"), local("SourceSansPro-Regular"),
+    url("../fonts/SourceSansPro/sourcesanspro.woff2") format("woff2"),
+    url("../fonts/SourceSansPro/sourcesanspro.woff") format("woff"),
+    url("../fonts/SourceSansPro/sourcesanspro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro Bold";
+  src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"),
+    url("../fonts/SourceSansPro/sourcesansprobold.woff2") format("woff2"),
+    url("../fonts/SourceSansPro/sourcesansprobold.woff") format("woff"),
+    url("../fonts/SourceSansPro/sourcesansprobold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
